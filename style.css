@@ -1,0 +1,557 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	cursor: url("img/molotok.png") 37 35, auto;
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+/*Обнуление
+*/
+
+html,
+body {
+	background-color: #fff;
+	height: 100%;
+}
+
+.wrapper {
+}
+.wrapper-image {
+	position: relative;
+	padding-top: 36.25%;
+}
+.wrapper-image img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	max-height: 100vh;
+	min-height: 100vh;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.weather {
+	position: fixed;
+	min-width: 100%;
+	max-width: 100%;
+	min-height: 100vh;
+	max-height: 100vh;
+	top: 0px;
+	left: 0px;
+	animation: water 0.2s linear infinite;
+}
+@keyframes water {
+	0% {
+		transform: translate(0px, 0px);
+	}
+	50% {
+		transform: translate(40px, 50px);
+	}
+	100% {
+		transform: translate(80px, 100px);
+	}
+}
+.weather img {
+	max-width: 100%;
+	min-width: 100%;
+	min-height: 100vh;
+	max-height: 100vh;
+}
+
+.hole-1 {
+	position: absolute;
+	bottom: 180px;
+	left: 120px;
+	width: 120px;
+	height: 100px;
+	opacity: 0.8;
+	transform: rotateX(40deg);
+}
+.hole-1 img {
+	border-radius: 50%;
+	max-width: 100%;
+	max-height: 100%;
+	min-height: 100%;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.krot-1 {
+	position: absolute;
+	bottom: 195px;
+	left: 130px;
+	width: 100px;
+	height: 70px;
+	opacity: 0.7;
+	visibility: hidden;
+}
+.krot-1._active {
+	visibility: visible;
+}
+.krot-1 img {
+	border-radius: 50%;
+	min-width: 100%;
+	max-width: 100%;
+	max-height: 100%;
+	min-height: 100%;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.hole-2 {
+	position: absolute;
+	bottom: 220px;
+	left: 380px;
+	width: 120px;
+	height: 100px;
+	opacity: 0.4;
+	transform: rotateX(300deg);
+}
+.hole-2 img {
+	border-radius: 50%;
+	max-width: 100%;
+	max-height: 100%;
+	min-height: 100%;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.krot-2 {
+	position: absolute;
+	bottom: 245px;
+	left: 390px;
+	width: 100px;
+	height: 50px;
+	opacity: 0.8;
+	visibility: hidden;
+}
+.krot-2._active {
+	visibility: visible;
+}
+.krot-2 img {
+	border-radius: 50%;
+	min-width: 100%;
+	max-width: 100%;
+	max-height: 100%;
+	min-height: 100%;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.hole-3 {
+	position: absolute;
+	bottom: 140px;
+	left: 650px;
+	width: 120px;
+	height: 100px;
+	opacity: 0.8;
+	transform: rotateX(40deg);
+}
+.hole-3 img {
+	border-radius: 50%;
+	max-width: 100%;
+	max-height: 100%;
+	min-height: 100%;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.krot-3 {
+	position: absolute;
+	bottom: 155px;
+	left: 660px;
+	width: 100px;
+	height: 70px;
+	opacity: 0.7;
+	visibility: hidden;
+}
+.krot-3._active {
+	visibility: visible;
+}
+.krot-3 img {
+	border-radius: 50%;
+	min-width: 100%;
+	max-width: 100%;
+	max-height: 100%;
+	min-height: 100%;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.hole-4 {
+	position: absolute;
+	bottom: 240px;
+	left: 1000px;
+	width: 120px;
+	height: 100px;
+	opacity: 0.4;
+	transform: rotateX(300deg);
+}
+.hole-4 img {
+	border-radius: 50%;
+	max-width: 100%;
+	max-height: 100%;
+	min-height: 100%;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.krot-4 {
+	position: absolute;
+	bottom: 265px;
+	left: 1010px;
+	width: 100px;
+	height: 50px;
+	opacity: 0.8;
+	visibility: hidden;
+}
+.krot-4._active {
+	visibility: visible;
+}
+.krot-4 img {
+	border-radius: 50%;
+	min-width: 100%;
+	max-width: 100%;
+	max-height: 100%;
+	min-height: 100%;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/*LUNKA ADAPTATIOM*/
+@media(max-width: 1200px) {
+	.hole-4 {
+		left: 900px;
+	}
+	.krot-4 {
+		left: 910px;
+	}
+
+}
+@media(max-width: 1100px) {
+	.hole-1 {
+		left: 80px;		
+	}
+	.krot-1 {
+		left: 90px;
+		
+	}	
+	.hole-2 {
+		left: 330px;		
+	}
+	.krot-2 {
+		left: 340px;		
+	}	
+	.hole-3 {
+		left: 580px;			
+	}
+	.krot-3 {
+		left: 590px;			
+	}	
+	.hole-4 {
+		left: 800px;				
+	}
+	.krot-4 {
+		left: 810px;				
+	}	
+
+}
+
+.game-info {
+	color: brown;
+	font-size: 50px;
+	position: absolute;
+	top: 20px;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+.destroyed-krot {
+	color: brown;
+	font-size: 20px;
+	position: absolute;
+	top: 20px;
+	left: 0;
+}
+.escaped-krot {
+	color: brown;
+	font-size: 20px;
+	position: absolute;
+	top: 50px;
+	left: 0;
+}
+
+@media(max-width: 990px) {
+	.hole-1 {
+		left: 80px;		
+		bottom: 80px;
+	}
+	.krot-1 {
+		left: 90px;
+		bottom: 95px;		
+	}	
+	.hole-2 {
+		left: 300px;		
+	}
+	.krot-2 {
+		left: 310px;		
+	}
+	.hole-3 {
+		bottom: 80px;		
+		left: 480px;
+	}
+	.krot-3 {
+		left: 490px;	
+		bottom: 95px;	
+	}	
+	.hole-4 {
+		left: 700px;			
+	}
+	.krot-4 {
+		left: 710px;		
+	}
+}
+@media(max-width: 900px) {
+	.escaped-krot {
+		font-size: 15px;
+	}
+	.destroyed-krot {
+		font-size: 15px;
+	}
+	.game-info {
+		font-size: 30px;
+	}
+	.hole-1 {
+		left: 80px;		
+		bottom: 40px;
+	}
+	.krot-1 {
+		left: 90px;
+		bottom: 55px;		
+	}	
+	.hole-2 {
+		left: 200px;		
+	}
+	.krot-2 {
+		left: 210px;		
+	}
+	.hole-3 {
+		bottom: 40px;				
+	}
+	.krot-3 {		
+		bottom: 55px;				
+	}	
+	.hole-4 {
+		left: 550px;			
+	}
+	.krot-4 {
+		left: 560px;		
+	}
+	@media(max-width: 750px) {
+		.hole-2 {
+			left: 150px;		
+		}
+		.krot-2 {
+			left: 160px;		
+		}
+		.hole-3 {
+			left: 380px;			
+		}
+		.krot-3 {		
+			left: 390px;				
+		}	
+		.hole-4 {
+			left: 450px;			
+		}
+		.krot-4 {
+			left: 460px;		
+		}
+	}
+	@media(max-width: 600px) {
+		.game-info {
+			top: 70px;
+		}
+		.hole-1 {
+			left: 50px;		
+			bottom: 40px;
+		}
+		.krot-1 {
+			left: 60px;
+			bottom: 55px;		
+		}	
+		.hole-2 {
+			left: 50px;		
+		}
+		.krot-2 {
+			left: 60px;		
+		}
+		.hole-3 {
+			left: 300px;			
+		}
+		.krot-3 {		
+			left: 310px;				
+		}
+		.hole-4 {
+			left: 350px;			
+		}
+		.krot-4 {
+			left: 360px;		
+		}	
+		
+	}
+	@media(max-width: 480px) {
+		.hole-1 {
+			left: 20px;		
+			bottom: 40px;
+		}
+		.krot-1 {
+			left: 30px;
+			bottom: 55px;		
+		}	
+		.hole-2 {
+			left: 20px;		
+		}
+		.krot-2 {
+			left: 30px;		
+		}
+		.hole-3 {
+			left: 250px;			
+		}
+		.krot-3 {		
+			left: 260px;				
+		}
+		.hole-4 {
+			left: 250px;			
+		}
+		.krot-4 {
+			left: 260px;		
+		}	
+	}
+	@media(max-width: 380px) {
+		.hole-3 {
+			left: 210px;			
+		}
+		.krot-3 {		
+			left: 220px;				
+		}
+		.hole-4 {
+			left: 210px;			
+		}
+		.krot-4 {
+			left: 220px;		
+		}	
+	}
+	@media(max-width: 340px) {
+		.hole-3 {
+			left: 190px;			
+		}
+		.krot-3 {		
+			left: 200px;				
+		}
+		.hole-4 {
+			left: 190px;			
+		}
+		.krot-4 {
+			left: 200px;		
+		}	
+	}
+
+}
+
+
+
+
+
