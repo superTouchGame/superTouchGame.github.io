@@ -37,7 +37,7 @@ krot1.addEventListener("click", function (event) {
 	let forest = document.getElementById('hit');
 	hit.play();
 	krot1.classList.remove("_active");
-	putin.pause();
+	//putin.pause();
 	//hitspecch.play();
 
 });
@@ -46,7 +46,7 @@ krot2.addEventListener("click", function (event) {
 	let forest = document.getElementById('hit');
 	hit.play();
 	krot2.classList.remove("_active");
-	lukashenko.pause();
+	//lukashenko.pause();
 	//hitspecch.play();
 });
 
@@ -55,7 +55,7 @@ krot3.addEventListener("click", function (event) {
 	let forest = document.getElementById('hit');
 	hit.play();
 	krot3.classList.remove("_active");
-	kadirov.pause();
+	//kadirov.pause();
 	//hitspecch.play();
 });
 
@@ -64,7 +64,7 @@ krot4.addEventListener("click", function (event) {
 	let forest = document.getElementById('hit');
 	hit.play();
 	krot4.classList.remove("_active");
-	medvedev.pause();
+	//medvedev.pause();
 	//hitspecch.play();
 
 });
@@ -87,7 +87,7 @@ function startGame() {
 		let krotApear = document.getElementById('appear');
 		krotApear.play();
 		putin.currentTime = 0;
-		putin.play();
+		//putin.play();
 		i = setTimeout(function didus() {
 			if (krot1.classList.contains("_active")) {
 				krot1.classList.remove("_active");
@@ -96,7 +96,7 @@ function startGame() {
 				krotDissapear.play();
 				escapedCounter.innerHTML = Number(escapedCounter.innerHTML) + 1;
 				ramNum = getRandomNum(1, 4);
-				putin.pause();
+				//putin.pause();
 				setTimeout(startGame, 3000);
 			}
 		}, 3000);
@@ -106,7 +106,7 @@ function startGame() {
 		let krotApear = document.getElementById('appear');
 		krotApear.play();
 		lukashenko.currentTime = 0;
-		lukashenko.play();
+		//lukashenko.play();
 		i = setTimeout(function didus() {
 			if (krot2.classList.contains("_active")) {
 				krot2.classList.remove("_active");
@@ -115,7 +115,7 @@ function startGame() {
 				krotDissapear.play();
 				escapedCounter.innerHTML = Number(escapedCounter.innerHTML) + 1;
 				ramNum = getRandomNum(1, 4);
-				lukashenko.pause();
+				//lukashenko.pause();
 				setTimeout(startGame, 3000);
 			}
 		}, 3000);
@@ -125,7 +125,7 @@ function startGame() {
 		let krotApear = document.getElementById('appear');
 		krotApear.play();
 		kadirov.currentTime = 0;
-		kadirov.play();
+		//kadirov.play();
 		i = setTimeout(function didus() {
 			if (krot3.classList.contains("_active")) {
 				krot3.classList.remove("_active");
@@ -134,7 +134,7 @@ function startGame() {
 				krotDissapear.play();
 				escapedCounter.innerHTML = Number(escapedCounter.innerHTML) + 1;
 				ramNum = getRandomNum(1, 4);
-				kadirov.pause();
+				//kadirov.pause();
 				setTimeout(startGame, 3000);
 			}
 		}, 3000);
@@ -144,7 +144,7 @@ function startGame() {
 		let krotApear = document.getElementById('appear');
 		krotApear.play();
 		medvedev.currentTime = 0;
-		medvedev.play();
+		//medvedev.play();
 		i = setTimeout(function didus() {
 			if (krot4.classList.contains("_active")) {
 				krot4.classList.remove("_active");
@@ -153,7 +153,7 @@ function startGame() {
 				krotDissapear.play();
 				escapedCounter.innerHTML = Number(escapedCounter.innerHTML) + 1;
 				ramNum = getRandomNum(1, 4);
-				medvedev.pause();
+				//medvedev.pause();
 				setTimeout(startGame, 3000);
 			}
 		}, 3000);
