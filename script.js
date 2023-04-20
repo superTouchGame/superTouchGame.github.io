@@ -38,7 +38,7 @@ krot1.addEventListener("click", function (event) {
 	hit.play();
 	krot1.classList.remove("_active");
 	putin.pause();
-	hitspecch.play();
+	//hitspecch.play();
 
 });
 krot2.addEventListener("click", function (event) {
@@ -47,7 +47,7 @@ krot2.addEventListener("click", function (event) {
 	hit.play();
 	krot2.classList.remove("_active");
 	lukashenko.pause();
-	hitspecch.play();
+	//hitspecch.play();
 });
 
 krot3.addEventListener("click", function (event) {
@@ -56,7 +56,7 @@ krot3.addEventListener("click", function (event) {
 	hit.play();
 	krot3.classList.remove("_active");
 	kadirov.pause();
-	hitspecch.play();
+	//hitspecch.play();
 });
 
 krot4.addEventListener("click", function (event) {
@@ -65,7 +65,7 @@ krot4.addEventListener("click", function (event) {
 	hit.play();
 	krot4.classList.remove("_active");
 	medvedev.pause();
-	hitspecch.play();
+	//hitspecch.play();
 
 });
 
